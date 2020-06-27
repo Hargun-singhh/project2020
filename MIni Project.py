@@ -135,7 +135,9 @@ if total >= 500:
         print("EATREPEAT Applied")
         print("Discount of \u20b9", discount, "applied. Please pay total including delivery charges : \u20b9", amountToPay)
 
-    elif promoCode == "TRYNOW":
+if total >= 1000:
+
+    if promoCode == "TRYNOW":
         discount = 0.50 * total
 
         if discount >= 400:
