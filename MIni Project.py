@@ -1,9 +1,11 @@
 print("ORDER FOOD ONLINE FROM ZOMATO")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+print("~+~~+~~+~~+~~+~~+~~+~~+~~+~~+~~+")
 print("TIKKA JUNCTION")
 print("~~~~~~~~~~~~~~")
-print("TIME TO DELIVER = 40 MINS")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~")
+print("TIME TO DELIVER = 33 MINS")
+print("***+++***+++***+++***+++***+++***")
+print("SAFETY MEASURES = 4.5 / 5")
+print("***+++***+++***+++***+++***+++***")
 products = {
     "kadhai paneer": 340,
     "dal makhani": 320,
@@ -122,8 +124,10 @@ for price in cart:
 
 print("TOTAL:", total)
 
+promoCode = input("Enter the Promo Code: ")
+
 if total >= 500:
-    promoCode = input("Enter the Promo Code: ")
+
 
     if promoCode == "EATREPEAT":
         discount = 0.40 * total
@@ -134,7 +138,7 @@ if total >= 500:
         amountToPay = total - discount + delivery
         print("EATREPEAT Applied")
         print("Discount of \u20b9", discount, "applied. Please pay total including delivery charges : \u20b9", amountToPay)
-
+promoCode = input("Enter the Promo Code: ")
 if total >= 1000:
 
     if promoCode == "TRYNOW":
